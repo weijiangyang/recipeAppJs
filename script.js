@@ -4,9 +4,11 @@ const recipeContainer = document.querySelector('.recipe-container');
 const recipeDetailsContent = document.querySelector('.recipe-details-content');
 const recipeCloseBtn = document.querySelector('.recipe-close-btn');
 const recipeDeatailsParent = document.querySelector('.recipe-details');
+const sectionTitle = document.querySelector('section h2');
 
-
-const fetchRecipes = async(query) =>  {
+const fetchRecipes = async (query) => {
+sectionTitle.innerHTML = "<h2>Fetching Recipes ...</h2>"
+    
     const data = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
     const response = await data.json();
     response.meals.forEach((meal) => {
