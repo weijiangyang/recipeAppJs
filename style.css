@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    background-color: #2b1d0f;
+    color:#000;
+}
+li{
+    list-style: none;
+}
+header nav{
+    background-color: #212121;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 1;
+}
+header nav h1{
+    font-size: 26px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color:#fff;
+}
+header nav form{
+    display:flex;
+    justify-content: center;
+ 
+}
+
+form input[type='text']{
+    flex-grow:1;
+    margin-right:10px;
+
+}
+form input[type='text'],button[type="submit"]{
+   border:none;
+   font-size: 18px;
+   padding:10px;
+   border-radius: 4px;
+
+}
+form button[type='submit']{
+    background-color: #f44336;
+    color:#fff;
+    cursor:pointer;
+    transition: background-color .2s ease-in-out;
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color:aliceblue;
+}
+.recipe-container{
+    width: 80%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 40px;
+}
+.recipe{
+    width:20%;
+    background-color: #fff;
+}
+.recipe img{
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.recipe p{
+    margin:15px;
+}
+.recipe p span{
+    font-weight: 600;
+}
+.recipe button{
+    padding:15px;
+    margin: 15px;
+    background-color: #f44336;
+    border:none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.recipe button:hover{
+   background-color:#e6544a;
+}
+.recipe-details{
+    display:none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    background-color: #694c2f;
+    padding:20px;
+    border-radius:12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+    color:#fff;
+    line-height: 35px;
+    overflow-y: scroll;
+    
+    
+}
+i{
+    background-color: aqua;
+    padding:8px;
+    border:none;
+   
+}
+button.recipe-close-btn{
+    position: absolute;
+    right:10px;
+   
+}
+div.recipe-details-content p{
+    color:#75d91d
+}
+
+
+/* responsive code */
+@media screen and (max-width: 600px){
+    header nav{
+        flex-direction: column;
+    }
+    header nav form{
+        width:80%;
+    }
+}
