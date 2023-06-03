@@ -31,6 +31,7 @@ header nav h1{
     text-transform: uppercase;
     margin-bottom: 20px;
     color:#fff;
+    max-width: 80%;
 }
 header nav form{
     display:flex;
@@ -62,17 +63,17 @@ h2{
     color:aliceblue;
 }
 .recipe-container{
-    width: 80%;
+    width: 90%;
     margin:auto;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    gap: 40px;
+    gap: 20px;
 }
 .recipe{
-    width:20%;
+    width:30%;
     background-color: #fff;
 }
 .recipe img{
@@ -143,5 +144,31 @@ div.recipe-details-content p{
     }
     header nav form{
         width:80%;
+    }
+   .recipe-container{
+    
+    justify-content: center;
+   }
+   .recipe{
+    width: 40%;
+   }
+    .recipe img{
+        width:100%
+    }
+}
+
+@media screen and (max-width: 400px){
+    header nav{
+        flex-direction: column;
+    }
+    header nav form{
+        width:80%;
+    }
+   .recipe-container{
+    flex-direction: column;
+    justify-content: center;
+   }
+    .recipe img{
+        width:100%
     }
 }
