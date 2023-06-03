@@ -12,6 +12,10 @@ body{
 li{
     list-style: none;
 }
+li span{
+    color:rgb(221, 169, 169);
+    font-weight: 600;
+}
 header nav{
     background-color: #212121;
     padding:20px;
@@ -122,6 +126,8 @@ i{
 button.recipe-close-btn{
     position: absolute;
     right:10px;
+    top:10px;
+
    
 }
 div.recipe-details-content p{

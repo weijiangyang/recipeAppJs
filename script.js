@@ -28,6 +28,7 @@ sectionTitle.innerHTML = "<h2>Fetching Recipes ...</h2>"
         recipeContainer.appendChild(recipeDiv);
          const button = document.createElement('button');
         button.textContent = "view recipe";
+
        
         recipeDiv.appendChild(button);
         button.addEventListener('click', () => {
@@ -44,7 +45,7 @@ const fetchIngredient = (meal) => {
         const mesure = meal[`strMeasure${i}`]
         if (ingredient) {
         
-          ingredientsList += `<li>${mesure} ${ingredient}</li>`;
+          ingredientsList += `<li><span>${mesure}</span> ${ingredient}</li>`;
       console.log(meal);
         } else {
       console.log(meal);
