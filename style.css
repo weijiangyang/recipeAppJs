@@ -131,7 +131,8 @@ button.recipe-close-btn{
    
 }
 div.recipe-details-content p{
-    color:#75d91d
+    color:#75d91d;
+    line-height: 35px;
 }
 
 
